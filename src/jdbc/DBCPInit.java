@@ -53,7 +53,7 @@ public class DBCPInit extends HttpServlet {
             Class.forName("org.apache.commons.dbcp2.PoolingDriver");
 
             //7. 커넥션 풀 드라이버에 생성한 커넥션 풀을 등록한다.
-            PoolingDriver driver = (PoolingDriver) DriverManager.getDriver("jdbc:apache:commons:dbcp");
+            PoolingDriver driver = (PoolingDriver) DriverManager.getDriver("jdbc:apache:commons:dbcp:");
             driver.registerPool("chap14", connectionPool);
         }catch (Exception e) {
             throw new RuntimeException(e);

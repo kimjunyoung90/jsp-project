@@ -15,9 +15,7 @@ MEMBER 테이블의 내용
 	<td>이름</td><td>아이디</td><td>이메일</td>
 </tr>
 <%
-	// 1. JDBC 드라이버 로딩
-	Class.forName("com.mysql.jdbc.Driver");
-	
+
 	Connection conn = null;
 	Statement stmt = null;
 	ResultSet rs = null;
